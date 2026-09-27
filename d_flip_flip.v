@@ -8,7 +8,7 @@ always@(posedge clk or negedge rst) begin
         q <= 1'b0;   // reset asserted → force output low
     end
     else begin
-        q <= ~clk;      // normal operation → capture d
+        q <= d;      // normal operation → capture d
     end
 end
 endmodule
